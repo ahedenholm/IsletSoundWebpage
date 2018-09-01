@@ -4,6 +4,12 @@ body {
   font-family: sans-serif;
 }
 
+.bg { 
+  height: 100vh;
+  background: linear-gradient(-3deg, #ffffff 45%, #ededed 25%)
+}
+
+.padding24px { padding: 24px; }
 
 @keyframes spinImage {
   from { transform: rotate(0deg); }
