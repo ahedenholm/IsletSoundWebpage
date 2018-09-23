@@ -1,18 +1,18 @@
 body {
   margin: 0;
-  padding: 24px;
+  padding: 10px;
 }
 .bg { 
-  background: #ededed ;
+  /* background: #ededed ; */
+  background: linear-gradient( to right, rgba(7, 124, 119, .8), rgba(204, 255, 252, 1));
   border-style: solid;
-  border-width: 24px;
   border-color: #ffffff;
 }
 .bgSkewed { 
   height: 100vh;
   background: linear-gradient(-3deg, #ffffff 55%, #ededed 25%);
 }
-.bg {
+.bg2 {
   height: 100vh;
   background-image:linear-gradient( to right, rgba(255,255,255, .3), rgba(255,255,255, 0.1)), url('../images/abstract-art-decoration-1029624.jpg');
   background-size: cover;
@@ -258,8 +258,12 @@ body {
 .paddingBottom75px { padding-bottom: 75px; }
 
 .top0 { top: 0; }
+.top5 { top: 5px; }
+.top24 { top: 24px; }
 .left0 { left: 0; }
 .right0 { right: 0; }
+.right5 { right: 5px; }
+.right24 { right: 24px; }
 .bottom0 { bottom: 0; }
 
 .filterBlur2 { -webkit-filter: blur(2px); filter: blur(2px) }
