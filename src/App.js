@@ -7,12 +7,10 @@ import LandingPage from './components/LandingPage';
 import Listen from './components/Listen';
 import NavigationBar from './components/NavigationBar';
 import DemoReelWidget from './components/DemoReelWidget';
+import constants from './components/constants';
 
-const
-  LANDINGPAGE = 'LANDINGPAGE',
-  LISTEN = 'LISTEN',
-  CURRENT = 'CURRENT',
-  CONTACT = 'CONTACT';
+import placeholderLogo from './assets/images/placeholder logo.png'
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -29,33 +27,28 @@ class App extends Component {
   slideTitleDown = () => {
     document.getElementById('img').classList.add('animSlideTitleDown');
   }
+
+  // button primary colors  focus: #1EAEDB  #33C3F0
+  // new colors 274b46, 274b46
   render() {
-    console.log('active content: ', this.state.activeContent);
     return (
       <div className="">
-          <DemoReelWidget />
-        <div className="container">
+        <DemoReelWidget />
+        <div className="container animFadeIn">
           <header id="header" className="displayFlex flexCenter flexColumn marginTop150px marginBottom35px">
-            <h2 onClick={() => this.toggleActiveContent(LANDINGPAGE)}>Islet Sound</h2>
+            {/* <img src={placeholderLogo} height="100" className="borderRadius50percent marignBottom35px" ></img> */}
+            <h2 onClick={() => this.toggleActiveContent(cosntants.LANDINGPAGE)}>Islet Sound</h2>
             {/* <img className="borderRadius50percent marginBottom35px" src={isletLogo} onClick={() => this.toggleActiveContent(LANDINGPAGE)}></img> */}
             <h5>Music production for games</h5>
-            <div>
-              <button
-                onClick={() => this.toggleActiveContent(LISTEN)}
-                className={(this.state.activeContent === LISTEN ? "button-primary" : "button") + " button margin2px"}>LISTEN</button>
-              <button
-                onClick={() => this.toggleActiveContent(CURRENT)}
-                className={(this.state.activeContent === CURRENT ? "button-primary" : "button") + " button margin2px"}>CURRENT PROJECTS</button>
-              <button
-                onClick={() => this.toggleActiveContent(CONTACT)}
-                className={(this.state.activeContent === CONTACT ? "button-primary" : "button") + " button margin2px"}> CONTACT</button>
+            <div className="">
+              
             </div>
           </header>
-          <section className="container">
-            <LandingPage hidden={this.state.activeContent !== LANDINGPAGE} />
-            <Listen hidden={this.state.activeContent !== LISTEN} />
-            <CurrentProjects hidden={this.state.activeContent !== CURRENT} />
-            <Contact hidden={this.state.activeContent !== CONTACT} />
+          <section className="">
+            <LandingPage hidden={this.state.activeContent !== cosntants.LANDINGPAGE} />
+            <Listen hidden={this.state.activeContent !== cosntants.LISTEN} />
+            <CurrentProjects hidden={this.state.activeContent !== cosntants.CURRENT} />
+            <Contact hidden={this.state.activeContent !== cosntants.CONTACT} />
           </section>
         </div>
       </div >

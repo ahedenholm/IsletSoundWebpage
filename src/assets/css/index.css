@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  padding: 10px;
 }
 .bg { 
   /* background: #ededed ; */
@@ -14,7 +13,7 @@ body {
 }
 .bg2 {
   height: 100vh;
-  background-image:linear-gradient( to right, rgba(255,255,255, .3), rgba(255,255,255, 0.1)), url('../images/abstract-art-decoration-1029624.jpg');
+  background-image:linear-gradient( to right, rgba(255,255,255, .3), rgba(255,255,255, 0.1));
   background-size: cover;
 }
 
@@ -75,6 +74,7 @@ body {
 .minWidth500 { min-width: 500px; }
 
 .maxWidth300 { max-width: 300px; }
+.maxWidth100percent { max-width: 100%}
 
 .staticHeight25 { height: 25px; }
 .staticHeight35 { height: 35px; }
@@ -206,6 +206,7 @@ body {
 .margin12px { margin: 12px; }
 .margin35px { margin: 35px; }
 .marginBottom5perc { margin-bottom: 5%; }
+.marginBottom4px { margin-bottom: 4px; }
 .marginBottom5px { margin-bottom: 5px; }
 .marginBottom10px { margin-bottom: 10px; }
 .marginBottom35px { margin-bottom: 35px; }
