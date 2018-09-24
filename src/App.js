@@ -15,7 +15,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeContent: LANDINGPAGE,
+      activeContent: constants.LANDINGPAGE,
     }
   }
   toggleActiveContent = (content) => {
@@ -37,21 +37,21 @@ class App extends Component {
         <div className="container animFadeIn">
           <header id="header" className="displayFlex flexCenter flexColumn marginTop150px marginBottom35px">
             {/* <img src={placeholderLogo} height="100" className="borderRadius50percent marignBottom35px" ></img> */}
-            <h2 onClick={() => this.toggleActiveContent(cosntants.LANDINGPAGE)}>Islet Sound</h2>
+            <h2 onClick={() => this.toggleActiveContent(constants.LANDINGPAGE)}>Islet Sound</h2>
             {/* <img className="borderRadius50percent marginBottom35px" src={isletLogo} onClick={() => this.toggleActiveContent(LANDINGPAGE)}></img> */}
             <h5>Music production for games</h5>
             <div className="">
-              
+              <NavigationBar activeContent={this.state.activeContent} toggleActiveContent={this.toggleActiveContent}/>
             </div>
           </header>
           <section className="">
-            <LandingPage hidden={this.state.activeContent !== cosntants.LANDINGPAGE} />
-            <Listen hidden={this.state.activeContent !== cosntants.LISTEN} />
-            <CurrentProjects hidden={this.state.activeContent !== cosntants.CURRENT} />
-            <Contact hidden={this.state.activeContent !== cosntants.CONTACT} />
+            <LandingPage hidden={this.state.activeContent !== constants.LANDINGPAGE} />
+            <Listen hidden={this.state.activeContent !== constants.LISTEN} />
+            <CurrentProjects hidden={this.state.activeContent !== constants.CURRENT} />
+            <Contact hidden={this.state.activeContent !== constants.CONTACT} />
           </section>
         </div>
-      </div >
+      </div>
     );
   }
 }
