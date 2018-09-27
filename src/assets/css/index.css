@@ -17,15 +17,12 @@ body {
   background-size: cover;
 }
 
+#titleText { cursor: pointer; }
+
 .height100vh { height: 100vh; }
 
 .padding24px { padding: 24px; }
 .margin24px { margin: 24px; }
-
-@keyframes spinImage {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
 
 .flexFullscreen {
   overflow: hidden; 
@@ -286,8 +283,6 @@ body {
   z-index: -1;
 }
 
-
-
 .responsiveWidth { width: 100vw; }
 .responsiveWidthLRFLogo { width: 100px; }
 .responsiveHeight { height: 100vh; }
@@ -301,6 +296,10 @@ body {
 
 .visibleOnMobilePortrait { display: none; }
 
+@keyframes spinImage {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
 @keyframes fade-in {
   0% { opacity: 0 }
   100% { opacity: 1 }

@@ -37,7 +37,7 @@ class App extends Component {
         <div className="container animFadeIn">
           <header id="header" className="displayFlex flexCenter flexColumn marginTop150px marginBottom35px">
             {/* <img src={placeholderLogo} height="100" className="borderRadius50percent marignBottom35px" ></img> */}
-            <h2 onClick={() => this.toggleActiveContent(constants.LANDINGPAGE)}>Islet Sound</h2>
+            <h2 id="titleText" onClick={() => this.toggleActiveContent(constants.LANDINGPAGE)}>Islet Sound</h2>
             {/* <img className="borderRadius50percent marginBottom35px" src={isletLogo} onClick={() => this.toggleActiveContent(LANDINGPAGE)}></img> */}
             <h5>Music production for games</h5>
             <div className="">
