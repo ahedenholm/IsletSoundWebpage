@@ -1,12 +1,10 @@
 const ftp = require("basic-ftp")
-const fs = require("fs")
 
 let password = process.env.ISLETSOUNDSSH_PW || "SET PASSWORD IN ENVVAR";
 let username = process.env.ISLETSOUNDSSH_USER || "SET USERNAME IN ENVVAR";
 
 const sftpOptions = {
   host: "ssh.isletsound.com",
-  // host: "46.30.211.236",
   port: 22,
   user: username,
   password: password,
