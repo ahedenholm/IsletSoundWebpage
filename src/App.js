@@ -7,7 +7,7 @@ import LandingPage from './components/LandingPage';
 import Listen from './components/Listen';
 import NavigationBar from './components/NavigationBar';
 import DemoReelWidget from './components/DemoReelWidget';
-import constants from './components/constants';
+import constants from './constants';
 
 import placeholderLogo from './assets/images/placeholder logo.png'
 
@@ -40,9 +40,7 @@ class App extends Component {
             <h2 id="titleText" onClick={() => this.toggleActiveContent(constants.LANDINGPAGE)}>Islet Sound</h2>
             {/* <img className="borderRadius50percent marginBottom35px" src={isletLogo} onClick={() => this.toggleActiveContent(LANDINGPAGE)}></img> */}
             <h5>Music production for games</h5>
-            <div className="">
-              <NavigationBar activeContent={this.state.activeContent} toggleActiveContent={this.toggleActiveContent}/>
-            </div>
+            <NavigationBar activeContent={this.state.activeContent} toggleActiveContent={this.toggleActiveContent} />
           </header>
           <section className="">
             <LandingPage hidden={this.state.activeContent !== constants.LANDINGPAGE} />

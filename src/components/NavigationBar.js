@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import constants from './constants';
+import constants from '../constants';
 
 class NavigationBar extends Component {
   render() {
