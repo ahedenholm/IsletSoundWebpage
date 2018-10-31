@@ -15,6 +15,7 @@
     "build": "cmd /V /C node node_modules/react-scripts/bin/react-scripts.js build && del build\\static\\js\\*.map\"",
     "deploy": "node ftp_upload",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postversion": "git push && git push --tags"
   }
 }
