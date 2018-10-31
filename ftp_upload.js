@@ -26,7 +26,7 @@ async function upload() {
     await client.access(ftpOptions)
     console.log('client.list()', await client.list())
     await client.clearWorkingDir()
-    await client.uploadDir("./build")
+    await client.uploadDir("/build")
   }
   catch (err) {
     console.log('error: ', err)
