@@ -12,7 +12,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "cmd /V /C npm run build && del build\\static\\js\\*.map\"",
+    "build": "node node_modules/react-scripts/bin/react-scripts.js build",
+    "build:prod": "cmd /V /C npm run build && del build\\static\\js\\*.map\"",
     "deploy": "node ftp_upload",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
