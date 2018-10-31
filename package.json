@@ -12,7 +12,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "cmd /V /C npm run build && del build\\static\\js\\*.map\"",
     "deploy": "node ftp_upload",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
