@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-import isletLogo from './assets/images/logo200pxround.png';
 import Contact from './components/Contact';
 import CurrentProjects from './components/CurrentProjects';
 import LandingPage from './components/LandingPage';
@@ -8,8 +7,6 @@ import Listen from './components/Listen';
 import NavigationBar from './components/NavigationBar';
 import DemoReelWidget from './components/DemoReelWidget';
 import constants from './constants';
-
-import placeholderLogo from './assets/images/placeholder logo.png'
 
 class App extends Component {
   constructor(props) {
@@ -36,9 +33,7 @@ class App extends Component {
         <DemoReelWidget />
         <div className="container animFadeIn">
           <header id="header" className="displayFlex flexCenter flexColumn marginTop150px marginBottom35px">
-            {/* <img src={placeholderLogo} height="100" className="borderRadius50percent marignBottom35px" ></img> */}
             <h2 id="titleText" onClick={() => this.toggleActiveContent(constants.LANDINGPAGE)}>Islet Sound</h2>
-            {/* <img className="borderRadius50percent marginBottom35px" src={isletLogo} onClick={() => this.toggleActiveContent(LANDINGPAGE)}></img> */}
             <h5>Music production for games</h5>
             <NavigationBar activeContent={this.state.activeContent} toggleActiveContent={this.toggleActiveContent} />
           </header>

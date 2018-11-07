@@ -15,12 +15,7 @@ class CurrentProjects extends Component {
     return (
       <div className={(this.props.hidden ? "displayNone" : "") + " animFadeIn"}>
         <ProjectInfo
-          gameBanner={fallenGods.gameBanner}
-          gameTrailer={fallenGods.gameTrailer}
-          twitter={fallenGods.twitter}
-          facebook={fallenGods.facebook}
-          homepage={fallenGods.homepage}
-          soundcloud={fallenGods.soundcloud}
+          projectInfo={fallenGods}
         />
       </div>
     );

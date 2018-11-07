@@ -12,7 +12,7 @@ class Contact extends Component {
           <iframe width="32px" height="32px" allowtransparency="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fisletsound&amp;color=orange_white&amp;size=32"></iframe>
         </div>
         <div className="marginBottom35px">
-          <a href="https://twitter.com/IsletSound" target="_blank">
+          <a href="https://twitter.com/IsletSound" target="_blank" rel="noopener noreferrer">
             <img src={twitterLogo} alt="Twitter" height="50" width="50"/>
           </a>
         </div>
