@@ -9,7 +9,7 @@ class Contact extends Component {
           <a href="mailto:isletsound@gmail.com" id="mailTo"><strong> isletsound@gmail.com</strong></a>
         </div>
         <div className="marginBottom35px">
-          <iframe width="32px" height="32px" allowtransparency="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fisletsound&amp;color=orange_white&amp;size=32"></iframe>
+          <iframe width="32px" height="32px" allowtransparency="true" scrolling="no" frameBorder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fisletsound&amp;color=orange_white&amp;size=32"></iframe>
         </div>
         <div className="marginBottom35px">
           <a href="https://twitter.com/IsletSound" target="_blank" rel="noopener noreferrer">

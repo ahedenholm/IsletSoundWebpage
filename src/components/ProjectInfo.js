@@ -6,7 +6,7 @@ class CurrentProjects extends Component {
     return (
       <div className="displayFlex flexCenter flexColumn">
         <img width="560" src={projectInfo.gameBanner} className="marginBottom4px maxWidth100percent" />
-        <iframe width="560" height="315" src={projectInfo.gameTrailer} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen
+        <iframe width="560" height="315" src={projectInfo.gameTrailer} frameBorder="0" allow="autoplay; encrypted-media" allowFullscreen="true"
           className="marginBottom10px maxWidth100percent"></iframe>
         <div className="marginBottom35px maxWidth100percent">
           {projectInfo.homepage ? <a href={projectInfo.homepage.link} target="_blank" rel="noopener noreferrer" className="marginRight5px" >{projectInfo.homepage.text}</a> : null}
