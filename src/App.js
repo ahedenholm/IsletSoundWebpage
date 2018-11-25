@@ -7,6 +7,7 @@ import Listen from './components/Listen';
 import NavigationBar from './components/NavigationBar';
 import DemoReelWidget from './components/DemoReelWidget';
 import constants from './constants';
+const version = require('../package.json').version;
 
 class App extends Component {
   constructor(props) {
@@ -30,6 +31,7 @@ class App extends Component {
   render() {
     return (
       <div className="">
+      <div className="displayNone">{version}</div>
         <DemoReelWidget />
         <div className="container animFadeIn">
           <header id="header" className="displayFlex flexCenter flexColumn marginTop150px marginBottom35px">
