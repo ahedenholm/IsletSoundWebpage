@@ -3,12 +3,12 @@
   "version": "1.0.4",
   "private": true,
   "dependencies": {
-    "basic-ftp": "^2.14.4",
-    "graphql": "^14.0.2",
-    "react": "^16.6.1",
-    "react-dom": "^16.6.1",
+    "basic-ftp": "2.14.4",
+    "graphql": "14.0.2",
+    "react": "16.6.1",
+    "react-dom": "16.6.1",
     "react-scripts": "2.1.1",
-    "selenium-webdriver": "^4.0.0-alpha.1"
+    "selenium-webdriver": "4.0.0-alpha.1"
   },
   "scripts": {
     "start": "react-scripts start",
