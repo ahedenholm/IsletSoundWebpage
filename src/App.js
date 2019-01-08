@@ -8,6 +8,7 @@ import NavigationBar from './components/NavigationBar';
 import DemoReelWidget from './components/DemoReelWidget';
 import constants from './constants';
 const version = require('../package.json').version;
+const easteregg = 'Easter eggs for the curious: https://www.youtube.com/watch?v=KoZc9vjGmoA https://www.youtube.com/watch?v=fMZ4gHGAIkA https://www.youtube.com/watch?v=sIPmCqs3cnU&t=78s https://www.youtube.com/watch?v=HowbdxMKe1w https://www.youtube.com/watch?v=F6dGAZTj8xA https://www.youtube.com/watch?v=a-AthwabOLI https://www.youtube.com/watch?v=U-9rYC8RPu8' 
 
 class App extends Component {
   constructor(props) {
@@ -32,6 +33,7 @@ class App extends Component {
     return (
       <div className="">
       <div className="displayNone">{version}</div>
+      <div className="displayNone">{easteregg}</div>
         <DemoReelWidget />
         <div className="container animFadeIn">
           <header id="header" className="displayFlex flexCenter flexColumn marginTop150px marginBottom35px">
