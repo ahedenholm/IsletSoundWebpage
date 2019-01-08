@@ -1,6 +1,6 @@
 {
   "name": "isletsound",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "private": true,
   "dependencies": {
     "basic-ftp": "2.14.4",
