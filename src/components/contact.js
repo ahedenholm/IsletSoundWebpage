@@ -4,7 +4,7 @@ import twitterLogo from '../assets/images/Twitter_Logo_Blue.png'
 class Contact extends Component {
   render() {
     return (
-      <div className={(this.props.hidden ? "displayNone" : "") + " animFadeIn displayFlex flexCenter flexColumn"}>
+      <div className={(this.props.show ? "" : "displayNone") + " animFadeIn displayFlex flexCenter flexColumn"}>
         <div className="marginBottom35px">
           <a href="mailto:isletsound@gmail.com" id="mailTo"><strong> isletsound@gmail.com</strong></a>
         </div>

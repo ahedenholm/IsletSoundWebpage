@@ -13,7 +13,7 @@ const fallenGods = {
 class CurrentProjects extends Component {
   render() {
     return (
-      <div className={(this.props.hidden ? "displayNone" : "") + " animFadeIn"}>
+      <div className={(this.props.show ? "" : "displayNone") + " animFadeIn"}>
         <ProjectInfo
           projectInfo={fallenGods}
         />

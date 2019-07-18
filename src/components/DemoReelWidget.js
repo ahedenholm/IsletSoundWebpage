@@ -16,20 +16,16 @@ class DemoReelWidget extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      demoreelPlaying: false,
       trackToShow: randomizedTunesArray[1]
     }
   }
   componentWillMount(){
     this.setState({ trackToShow: randomizedTunesArray[getRandomInt(randomizedTunesArray.length)]});
   }
-  toggleDemoReelPlaying = () => {
-    this.setState({ demoreelPlaying: !this.state.demoreelPlaying });
-  }
   render() {
     return (
-      <div className={(this.props.demoreelPlaying ? "" : "positionAbsolute top24 right24") + " animFadeIn"}>
-        <iframe onClick={this.toggleDemoReelPlaying} width={this.state.demoreelPlaying ? "15%" : "100%"} height="20" scrolling="no" frameBorder="no" allow="autoplay"
+      <div className={"positionAbsolute top24 right24 animFadeIn"}>
+        <iframe  width="100%" height="20" scrolling="no" frameBorder="no" allow="autoplay"
           src={this.state.trackToShow}></iframe>
       </div>
     );

@@ -27,18 +27,10 @@ class App extends Component {
   toggleActiveContent = (content) => {
     this.setState({ activeContent: content });
   }
-  slideTitleUp = () => {
-    document.getElementById('img').classList.add('animSlideTitleUp');
-  }
-  slideTitleDown = () => {
-    document.getElementById('img').classList.add('animSlideTitleDown');
-  }
 
-  // button primary colors  focus: #1EAEDB  #33C3F0
-  // new colors 274b46, 274b46
   render() {
     return (
-      <div className="">
+      <div>
         <div className="displayNone">{version}</div>
         <div className="displayNone">{easteregg}</div>
         <DemoReelWidget />
@@ -48,11 +40,11 @@ class App extends Component {
             <h5>Music production for games</h5>
             <NavigationBar activeContent={this.state.activeContent} toggleActiveContent={this.toggleActiveContent} />
           </header>
-          <section className="">
-            <LandingPage hidden={this.state.activeContent !== constants.LANDINGPAGE} />
-            <Listen hidden={this.state.activeContent !== constants.LISTEN} />
-            <CurrentProjects hidden={this.state.activeContent !== constants.CURRENT} />
-            <Contact hidden={this.state.activeContent !== constants.CONTACT} />
+          <section>
+            <LandingPage show={this.state.activeContent === constants.LANDINGPAGE} />
+            <Listen show={this.state.activeContent === constants.LISTEN} />
+            <CurrentProjects show={this.state.activeContent === constants.CURRENT} />
+            <Contact show={this.state.activeContent === constants.CONTACT} />
           </section>
         </div>
       </div>
